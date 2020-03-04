@@ -183,7 +183,7 @@
       </ion-chip>
       <ion-label>
         <div>
-          <h2>Squirtle</h2>
+          <h2>Wartortle</h2>
           <ion-badge color="water">Water</ion-badge>
         </div>
       </ion-label>
@@ -206,7 +206,7 @@
       </ion-chip>
       <ion-label>
         <div>
-          <h2>Squirtle</h2>
+          <h2>Blastoise</h2>
           <ion-badge color="water">Water</ion-badge>
         </div>
       </ion-label>
@@ -244,5 +244,28 @@
     </ion-item-options>
   </ion-item-sliding>
 
+  <!-- Dragonite -->
+  <ion-item-sliding>
+    <ion-item color="dark">
+      <ion-chip slot="start">
+        <ion-label color="water">149</ion-label>
+      </ion-chip>
+      <ion-label>
+        <div>
+          <h2>Dragonite</h2>
+          <ion-badge color="dragon">Dragon</ion-badge>
+          <ion-badge color="flying">Flying</ion-badge>
+        </div>
+      </ion-label>
+      <ion-thumbnail slot="end">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png">
+      </ion-thumbnail>
+    </ion-item>
+
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)" color="warning">Alterar</ion-item-option>
+      <ion-item-option (click)="unread(item)" color="danger">Excluir</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
   
 </ion-content>
